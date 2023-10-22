@@ -16,6 +16,9 @@
     <meta property="og:title" content="Aziz Almi & Nur Isnaini" />
     <meta property="og:description" content="Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila, Bapak / Ibu / Saudara / i. berkenan hadir untuk memberikan do'a restunya kami ucapkan terimakasih." />
     <meta property="og:image" content="{{ asset('images/banner-1.jpeg') }}" />
+    <meta property="og:image:width" content="526" />
+    <meta property="og:image:height" content="275" />
+    <meta property="og:image:secure_url" content="{{ asset('images/banner-1.jpeg') }}" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />

@@ -41,6 +41,8 @@ class WeedingConfig extends Component
             'slug' => Str::slug($name),
             'phone' => $this->phone
         ]);
+        $this->name = '';
+        $this->phone = '';
         $this->invitations = WeedingInvitation::where('weeding_id',$this->weeding->id)->orderBy('name')->get();
         session()->flash('success', 'Data berhasil ditambahkan!');
     }
