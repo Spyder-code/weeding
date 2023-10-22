@@ -33,6 +33,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <link rel="stylesheet" href="{{ asset('style.css') }}?{{ date('his') }}">
     <link rel="icon" type="image/x-icon" href="{{ asset('images/an.jpg') }}">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     @livewireStyles
 </head>
 <body>
@@ -57,12 +61,12 @@
                         <h2 class="text-theme">- Save The Date -</h2>
                     </div>
                     <div class="navigation-left d-flex flex-column gap-2">
-                        <a href="{{ $weeding->reception_maps }}" target="d_blank" class="box d-flex justify-content-center"><i class="fa-solid fa-location-dot"></i></a>
-                        <div class="box d-flex justify-content-center" data-bs-target="#carouselExampleControls" data-bs-slide-to="1"><i class="fa-solid fa-calendar-days"></i></div>
-                        <div class="box d-flex justify-content-center" data-bs-target="#carouselExampleControls" data-bs-slide-to="2"><i class="fa-solid fa-envelope"></i></div>
+                        <a href="{{ $weeding->reception_maps }}" target="d_blank" class="box animate__animated animate__infinite animate__slow animate__pulse d-flex justify-content-center"><i class="fa-solid fa-location-dot"></i></a>
+                        <div class="box animate__animated animate__infinite animate__slow animate__pulse d-flex justify-content-center" data-bs-target="#carouselExampleControls" data-bs-slide-to="1"><i class="fa-solid fa-calendar-days"></i></div>
+                        <div class="box animate__animated animate__infinite animate__slow animate__pulse d-flex justify-content-center" data-bs-target="#carouselExampleControls" data-bs-slide-to="2"><i class="fa-solid fa-envelope"></i></div>
                     </div>
                     <div class="navigation-right d-flex flex-column gap-2">
-                        <div class="box flex-column border-0 text-theme" data-bs-target="#carouselExampleControls" data-bs-slide-to="1"><i class="fas fa-arrow-right"></i>Next</div>
+                        <div class="box animate__animated animate__infinite animate__slow animate__pulse flex-column border-0 avander fw-bold" data-bs-target="#carouselExampleControls" data-bs-slide-to="1"><i class="fas fa-arrow-right fw-bold"></i>Next</div>
                     </div>
                     <div class="footer">
                         <table class="desktop" style=" font-size: 1.3rem; font-weight:bold">
@@ -130,10 +134,10 @@
                         </table>
                     </div>
                     <div class="navigation-left d-flex flex-column gap-2" style="top: 50% !important">
-                        <div class="box flex-column border-0 text-theme" data-bs-target="#carouselExampleControls" data-bs-slide-to="0"><i class="fas fa-arrow-left"></i>Prev</div>
+                        <div class="box animate__animated animate__infinite animate__slow animate__pulse flex-column border-0 avander fw-bold" data-bs-target="#carouselExampleControls" data-bs-slide-to="0"><i class="fas fa-arrow-left"></i>Prev</div>
                     </div>
                     <div class="navigation-right d-flex flex-column gap-2" style="top: 50% !important">
-                        <div class="box flex-column border-0 text-theme" data-bs-target="#carouselExampleControls" data-bs-slide-to="2"><i class="fas fa-arrow-right"></i>Next</div>
+                        <div class="box animate__animated animate__infinite animate__slow animate__pulse flex-column border-0 avander fw-bold" data-bs-target="#carouselExampleControls" data-bs-slide-to="2"><i class="fas fa-arrow-right fw-bold"></i>Next</div>
                     </div>
                     <div class="footer" style="position: absolute; bottom:20px; left:0; right:0; margin-left:auto; margin-right: auto">
                         <div class="row">
@@ -209,9 +213,9 @@
                     </div> --}}
                     <div class="container-fluid" style="position: relative">
                         <div class="navigation-left d-flex flex-column gap-2 d-none d-md-block" style="top: 40%">
-                            <div class="box d-flex justify-content-center" data-bs-target="#carouselExampleControls" data-bs-slide-to="0"><i class="fa-solid fa-home"></i></div>
-                            <a href="{{ $weeding->reception_maps }}" target="d_blank" class="box d-flex justify-content-center"><i class="fa-solid fa-location-dot"></i></a>
-                            <div class="box d-flex justify-content-center" data-bs-target="#carouselExampleControls" data-bs-slide-to="1"><i class="fa-solid fa-calendar-days"></i></div>
+                            <div class="box animate__animated animate__infinite animate__slow animate__pulse d-flex justify-content-center" data-bs-target="#carouselExampleControls" data-bs-slide-to="0"><i class="fa-solid fa-home"></i></div>
+                            <a href="{{ $weeding->reception_maps }}" target="d_blank" class="box animate__animated animate__infinite animate__slow animate__pulse d-flex justify-content-center"><i class="fa-solid fa-location-dot"></i></a>
+                            <div class="box animate__animated animate__infinite animate__slow animate__pulse d-flex justify-content-center" data-bs-target="#carouselExampleControls" data-bs-slide-to="1"><i class="fa-solid fa-calendar-days"></i></div>
                         </div>
                         <div class="row">
                             <div class="col-12">
@@ -244,10 +248,10 @@
                         </table>
                     </div>
                     <div style="position: absolute; bottom:20px; padding:5px; width:100%; gap:10px" class="d-flex justify-content-center d-block d-md-none">
-                        <div class="box px-5 py-3 d-flex justify-content-center" data-bs-target="#carouselExampleControls" data-bs-slide-to="0"><i class="fa-solid fa-home"></i></div>
-                        <a href="{{ $weeding->reception_maps }}" target="d_blank" class="box px-5 py-3 d-flex justify-content-center"><i class="fa-solid fa-location-dot"></i></a>
-                        <div class="box px-5 py-3 d-flex justify-content-center" data-bs-target="#carouselExampleControls" data-bs-slide-to="1"><i class="fa-solid fa-calendar-days"></i></div>
-                        {{-- <div class="box text-theme py-1 d-none d-md-block" style="color: #f4e2be; width:400px">Tulis Ucapan</div> --}}
+                        <div class="box animate__animated animate__infinite animate__slow animate__pulse px-5 py-3 d-flex justify-content-center" data-bs-target="#carouselExampleControls" data-bs-slide-to="0"><i class="fa-solid fa-home"></i></div>
+                        <a href="{{ $weeding->reception_maps }}" target="d_blank" class="box animate__animated animate__infinite animate__slow animate__pulse px-5 py-3 d-flex justify-content-center"><i class="fa-solid fa-location-dot"></i></a>
+                        <div class="box animate__animated animate__infinite animate__slow animate__pulse px-5 py-3 d-flex justify-content-center" data-bs-target="#carouselExampleControls" data-bs-slide-to="1"><i class="fa-solid fa-calendar-days"></i></div>
+                        {{-- <div class="box animate__animated animate__infinite animate__slow animate__pulse text-theme py-1 d-none d-md-block" style="color: #f4e2be; width:400px">Tulis Ucapan</div> --}}
                     </div>
                 </main>
             </div>
@@ -289,7 +293,7 @@
                             </tr>
                         </table>
                         <div class="d-flex justify-content-between">
-                            <div class="avander ls box px-5 py-3 w-100" style="color: #f4e2be;font-size:1.5rem" onclick="playAudio()" data-bs-target="#carouselExampleControls" data-bs-slide-to="0"><b>Buka Undangan</b></div>
+                            <div class="animate__animated animate__infinite animate__slow animate__pulse avander ls box px-5 py-3 w-100" style="color: #f4e2be;font-size:1.5rem" onclick="playAudio()" data-bs-target="#carouselExampleControls" data-bs-slide-to="0"><b>Buka Undangan</b></div>
                         </div>
                     </div>
                 </main>
