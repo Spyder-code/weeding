@@ -195,7 +195,7 @@
                                 </tr>
                             </table>
                         </div>
-                        <div class="row">
+                        <div class="row d-block d-lg-none">
                             <marquee class="avander py-2" style="color: #f4e2be; border-top:#f4e2be 1px solid; border-bottom:#f4e2be 1px solid; letter-spacing: 3px"><b>{{ $weeding->reception_address }}</b></marquee>
                         </div>
                     </div>
