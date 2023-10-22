@@ -114,7 +114,20 @@
                 <main class="text-center two" style="background-image: url('{{ asset('images/image-2.jpeg') }}');">
                     <canvas id="snow-canvas1"></canvas>
                     <div class="d-flex justify-content-center text-center" style="opacity: .7">
-                        <div class="img-top" style="background-image:url('{{ asset('images/image-2.jpeg') }}')"></div>
+                        <div class="img-top" style="background-image:url('{{ asset('images/image-2.jpeg') }}'); transform: scaleX(-1);"></div>
+                    </div>
+                    <div class=" position-absolute mx-auto" style="top: 10px; left:0;right:0">
+                        <table class="avander table w-100 fw-bold" style="color: #f4e2be; letter-spacing:2px">
+                            <tr>
+                                <td style="width: 200px">Aziz Almi</td>
+                                <td rowspan="2"><img src="{{ asset('images/an.png') }}" class="logo img-fluid"></td>
+                                <td style="width: 200px">Nur Isnaini</td>
+                            </tr>
+                            <tr>
+                                <td>H. Mulyono (Alm) <br> & Hj. Siamah</td>
+                                <td>H. Sukadi (Alm) <br> & Hj. Sutilah</td>
+                            </tr>
+                        </table>
                     </div>
                     <div class="navigation-left d-flex flex-column gap-2" style="top: 50% !important">
                         <div class="box flex-column border-0 text-theme" data-bs-target="#carouselExampleControls" data-bs-slide-to="0"><i class="fas fa-arrow-left"></i>Prev</div>
@@ -181,6 +194,9 @@
                                     <td style="height: 10px"></td>
                                 </tr>
                             </table>
+                        </div>
+                        <div class="row">
+                            <marquee class="avander py-2" style="color: #f4e2be; border-top:#f4e2be 1px solid; border-bottom:#f4e2be 1px solid; letter-spacing: 3px"><b>{{ $weeding->reception_address }}</b></marquee>
                         </div>
                     </div>
                 </main>
