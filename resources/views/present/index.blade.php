@@ -237,9 +237,9 @@
             </div>
             <div class="carousel-item active">
                 <canvas id="snow-canvas3"></canvas>
-                <main class="text-center two" style="background-image: url('{{ asset('images/image-3.jpeg') }}');">
+                <main class="text-center two" style="background-image: url('{{ asset('images/image-4.jpeg') }}');">
                     <div class="d-flex justify-content-center text-center" style="opacity: .7">
-                        <div class="img-top" style="background-image:url('{{ asset('images/image-3.jpeg') }}')"></div>
+                        <div class="img-top" style="background-image:url('{{ asset('images/image-4.jpeg') }}')"></div>
                     </div>
                     <div class="text-center d-flex justify-content-center">
                         <div class="header d-flex justify-content-between gap-5">
@@ -250,7 +250,7 @@
                             <div class="divider avander ls"><span>Nur Isnaini</span></div>
                         </div>
                     </div>
-                    <div class="footer" style="position: relative; bottom:75px; left:unset">
+                    <div class="footer" style="position: absolute; bottom:75px; left:0; right:0; margin-left:auto; margin-right: auto">
                         <div class="d-flex justify-content-between">
                             <table class="mobiles time w-100 mt-1" style=" font-size: .9rem;">
                                 <tr>
