@@ -4,7 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Aziz & Nur Isnaini</title>
+    <!-- Primary Meta Tags -->
+    <title>Aziz Almi & Nur Isnaini</title>
+    <meta name="title" content="Aziz Almi & Nur Isnaini" />
+    <meta name="description" content="Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila, Bapak / Ibu / Saudara / i. berkenan hadir untuk memberikan do'a restunya kami ucapkan terimakasih." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:site_name" content="Weeding Invitation">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mediku.id/A-N/example" />
+    <meta property="og:title" content="Aziz Almi & Nur Isnaini" />
+    <meta property="og:description" content="Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila, Bapak / Ibu / Saudara / i. berkenan hadir untuk memberikan do'a restunya kami ucapkan terimakasih." />
+    <meta property="og:image" content="{{ asset('images/banner-1.jpeg') }}" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://mediku.id/A-N/example" />
+    <meta property="twitter:title" content="Aziz Almi & Nur Isnaini" />
+    <meta property="twitter:description" content="Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila, Bapak / Ibu / Saudara / i. berkenan hadir untuk memberikan do'a restunya kami ucapkan terimakasih." />
+    <meta property="twitter:image" content="{{ asset('images/banner-1.jpeg') }}" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <link rel="stylesheet" href="{{ asset('style.css') }}">
