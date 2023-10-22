@@ -1,0 +1,14 @@
+table.dataTable>tbody, table.dataTable>tbody>tr, table.dataTable>tbody>tr>td, table.dataTable>thead>th{
+    border-bottom: 5px white solid !important;
+}
+table.dataTable>thead tr{
+    background-color: cornflowerblue;
+    color: white;
+}
+table.dataTable>tbody>tr{
+    background-color: #f5f5f5 !important;
+}
+
+table.dataTable>body>tr{
+    background-color: #f5f5f5 !important;
+}

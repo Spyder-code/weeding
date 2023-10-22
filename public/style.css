@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@font-face {
+    font-family: 'avander';
+    src: url('./fonts/Avander.ttf');
+}
+.avander{
+    font-family: 'avander' !important;
+}
+.ls{
+    letter-spacing: 6px;
+}
+html,body {
+    height: 100%;
+    margin: 0;
+}
+h3,h2{
+    color: #f4e2be;
+}
+.logo{
+    height: 70px;
+}
+.text-theme{
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 6px;
+}
+.logo-name{
+    font-size: 3rem;
+    color: #f4e2be;
+}
+.header{
+    position: absolute;
+    top: 30px;
+}
+.footer{
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    color: #f4e2be;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.divider{
+    position: relative;
+    top: 35px;
+    background-color: aliceblue;
+    height: 1px;
+    width: 400px;
+    color: #f4e2be;
+    font-size: 1.7rem;
+}
+main.one{
+    height: 100vh;
+    width: 100%;
+    background-position: 0px -400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: middle;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+main.two{
+    height: 100vh;
+    width: 100%;
+    background-position: 0px -500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.8);
+}
+main.three{
+    height: 100vh;
+    width: 100%;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.6);
+}
+.bg-5{
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* .bg-5::before{
+    content: "";
+    width: 100%;
+    min-height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+.banner{
+    position: relative;
+    top: -30px;
+}
+.welcome{
+    width: 300px;
+    height: 200px;
+}
+.btn-theme{
+    padding: 10px 20px;
+    border: none;
+    background-color: lightcyan;
+    border-radius: 20px;
+}
+.navigation-right{
+    position: absolute;
+    top: 40%;
+    right: 50px;
+}
+.navigation-left{
+    position: absolute;
+    top: 30%;
+    left: 50px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f4e2be;
+    font-size: 2rem;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #f4e2be;
+}
+.box:hover{
+    cursor: pointer;
+    border: 1px solid #a9a9a9;
+    color: #8e8e8e;
+}
+main.one::before, main.twos::before{
+    content: "";
+    width: 100%;
+    min-height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+table.mobile{
+    display: none;
+}
+table.desktop{
+    display: block;
+}
+
+.img-top{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 500px;
+    border-bottom-left-radius: 300px;
+    border-bottom-right-radius: 300px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.carousel-item{
+    transition: transform 0.3s ease-out;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #f4e2be #ffffff00;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff00;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #f4e2be;
+    border-radius: 10px;
+    border: 1px solid #ffffff00;
+  }
+
+  .chats{
+    height: 300px;
+    overflow-x:hidden;
+    -webkit-scrollbar: none;
+    margin-right:10px
+  }
+
+  .ucapan{
+    font-size: 3rem;
+  }
+
+@media screen and (max-width: 1200px){
+    main.one{
+        background-position: 0px -250px;
+    }
+}
+
+@media screen and (max-width: 851px){
+    .chats{
+        height: 310px;
+        overflow-x:hidden;
+        -webkit-scrollbar: none;
+        margin-right:10px
+    }
+    main.one{
+        background-position: 0px -160px;
+    }
+    main.two{
+        background-position: 0px -150px;
+    }
+    main.three{
+        background-position: -103px 0px;
+    }
+    .divider{
+        font-size: 1.3rem;
+        width: 250px;
+    }
+    .box{
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+    .navigation-left{
+        top: 40%;
+        left: 30px;
+    }
+    .navigation-right{
+        top: 50%;
+        right: 30px;
+    }
+    table.desktop{
+        display: none;
+    }
+    .banner{
+        display: block;
+        top: -190px;
+    }
+    .header{
+        top:10px
+    }
+    table.mobile{
+        display: block;
+    }
+    .footer{
+        left: 100px
+    }
+}
+@media screen and (max-width: 770px){
+    .chats{
+        height: 300px;
+    }
+    .ucapan{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width: 760px){
+    .ucapan{
+        font-size: 2rem;
+    }
+    main.one{
+        background-position: 0px -25px;
+    }
+    main.two{
+        background-position: 0px -80px;
+    }
+    main.three{
+        background-position: -230px 0px;
+    }
+    .divider{
+        font-size: 1.3rem;
+        width: 250px;
+    }
+    .box{
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+    .navigation-left{
+        top: 40%;
+        left: 30px;
+    }
+    .navigation-right{
+        top: 50%;
+        right: 30px;
+    }
+    table.desktop{
+        display: none;
+    }
+    /* .banner{
+        display: none;
+    } */
+    .header{
+        top:10px
+    }
+    table.mobile{
+        display: block;
+    }
+    .footer{
+        left: 100px
+    }
+}
+@media screen and (max-width: 568px){
+    /* canvas{
+        display: none;
+    } */
+    main.one{
+        background-position: 0px -10px;
+    }
+    main.two{
+        background-position: 0px 50px;
+    }
+    main.three{
+        background-position: -290px 0px;
+    }
+    .divider{
+        font-size: 1rem;
+        width: 170px;
+    }
+    .box{
+        width: 53px;
+        height: 53px;
+        font-size: 1rem;
+    }
+    .navigation-left{
+        top: 45%;
+        left: 30px;
+    }
+    .navigation-right{
+        top: 50%;
+        right: 30px;
+    }
+    h3,h2{
+        font-size: 1rem;
+    }
+    .header{
+        top:10px
+    }
+    .logo{
+        height: 50px;
+    }
+    .footer{
+        left: unset;
+    }
+    /* table.mobile.time{
+        display: none;
+    } */
+}
+@media screen and (max-width: 493px){
+    .chats{
+        height: 310px;
+    }
+    main.one{
+        background-position: 0px 0px;
+    }
+    .divider{
+        display: none;
+        font-size: 1rem;
+        width: 170px;
+    }
+    .box{
+        width: 50px;
+        height: 50px;
+        font-size: 1.1rem;
+    }
+    .navigation-left{
+        top: 45%;
+        left: 30px;
+    }
+    .navigation-right{
+        top: 50%;
+        right: 30px;
+    }
+    .banner{
+        position: absolute;
+        bottom: unset;
+        top: 50px;
+        display: block;
+        padding: 0px 80px;
+    }
+    h3,h2{
+        font-size: 1.3rem;
+    }
+    .header{
+        top:10px
+    }
+    .banner h2{
+        display: none;
+    }
+    table.mobile.time{
+        display: block;
+    }
+
+}
+@media screen and (max-width: 400px){
+    main.one{
+        background-position: -55px 0px;
+    }
+    main.two{
+        background-position: 0px 0px;
+    }
+    main.three{
+        background-position: -330px 0px;
+    }
+    .divider{
+        display: none;
+        font-size: 1rem;
+        width: 170px;
+    }
+    .box{
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+    .navigation-left{
+        top: 45%;
+        left: 30px;
+    }
+    .navigation-right{
+        top: 50%;
+        right: 30px;
+    }
+    .banner{
+        position: absolute;
+        bottom: unset;
+        top: 50px;
+        display: block;
+        padding: 0px 80px;
+    }
+    h3,h2{
+        font-size: 1.3rem;
+    }
+    .header{
+        top:10px
+    }
+    .banner h2{
+        display: none;
+    }
+    table.mobile.time{
+        display: block;
+    }
+
+}
+@media screen and (max-width: 320px){
+    main.one{
+        background-position: -90px 0px;
+    }
+    .divider{
+        display: none;
+        font-size: 1rem;
+        width: 170px;
+    }
+    .box{
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+    .navigation-left{
+        top: 45%;
+        left: 30px;
+    }
+    .navigation-right{
+        top: 50%;
+        right: 30px;
+    }
+    .banner{
+        position: absolute;
+        bottom: unset;
+        top: 50px;
+        display: block;
+        padding: 0px 10px;
+    }
+    h3,h2{
+        font-size: 1.3rem;
+    }
+    .header{
+        top:10px
+    }
+    .banner h2{
+        display: none;
+    }
+    table.mobile.time{
+        display: none;
+    }
+
+}
+
+* {
+    transition: transform 0.5s ease; /* Add a smooth transition effect */
+}
+
+  /* Styles for screens smaller than 600px (adjust as needed) */
+@media only screen and (max-width: 600px) {
+    /* body {
+        transform: rotate(90deg);
+    } */
+    /* @media (orientation: landscape) {
+        body {
+            transform: rotate(90deg);
+        }
+    } */
+}
+
