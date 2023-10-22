@@ -15,22 +15,23 @@
     <meta property="og:url" content="https://mediku.id/A-N/example" />
     <meta property="og:title" content="Aziz Almi & Nur Isnaini" />
     <meta property="og:description" content="Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila, Bapak / Ibu / Saudara / i. berkenan hadir untuk memberikan do'a restunya kami ucapkan terimakasih." />
-    <meta property="og:image" content="{{ asset('images/banner-1.jpeg') }}" />
-    <meta property="og:image:width" content="526" />
-    <meta property="og:image:height" content="275" />
-    <meta property="og:image:secure_url" content="{{ asset('images/banner-1.jpeg') }}" />
+    <meta property="og:image" content="{{ asset('images/thumb.jpg') }}" />
+	<meta property="og:image:width" content="800" />
+	<meta property="og:image:height" content="532" />
+	<meta property="og:image:type" content="image/jpg" />
+    <meta property="og:image:secure_url" content="{{ asset('images/thumb.jpg') }}" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://mediku.id/A-N/example" />
     <meta property="twitter:title" content="Aziz Almi & Nur Isnaini" />
     <meta property="twitter:description" content="Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila, Bapak / Ibu / Saudara / i. berkenan hadir untuk memberikan do'a restunya kami ucapkan terimakasih." />
-    <meta property="twitter:image" content="{{ asset('images/banner-1.jpeg') }}" />
+    <meta property="twitter:image" content="{{ asset('images/thumb.jpg') }}" />
 
     <!-- Meta Tags Generated with https://metatags.io -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
-    <link rel="stylesheet" href="{{ asset('style.css') }}">
+    <link rel="stylesheet" href="{{ asset('style.css') }}?{{ date('his') }}">
     <link rel="icon" type="image/x-icon" href="{{ asset('images/an.jpg') }}">
     @livewireStyles
 </head>

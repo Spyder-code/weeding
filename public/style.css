@@ -360,10 +360,10 @@ table.desktop{
 }
 @media screen and (max-width: 493px){
     .chats{
-        height: 310px;
+        height: 400px;
     }
     main.one{
-        background-position: 0px 0px;
+        background-position: -50px 0px;
     }
     .divider{
         display: none;
@@ -412,7 +412,7 @@ table.desktop{
         background-position: 0px 0px;
     }
     main.three{
-        background-position: -330px 0px;
+        background-position: -360px 0px;
     }
     .divider{
         display: none;
