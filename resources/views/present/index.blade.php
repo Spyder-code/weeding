@@ -122,7 +122,7 @@
                     <div class="navigation-right d-flex flex-column gap-2" style="top: 50% !important">
                         <div class="box flex-column border-0 text-theme" data-bs-target="#carouselExampleControls" data-bs-slide-to="2"><i class="fas fa-arrow-right"></i>Next</div>
                     </div>
-                    <div class="footer" style="position: relative; bottom:20px; left:unset">
+                    <div class="footer" style="position: absolute; bottom:20px; left:0; right:0; margin-left:auto; margin-right: auto">
                         <div class="row">
                             <div class="col-6">
                                 <table class="desktop w-100" style=" font-size: 1.3rem">

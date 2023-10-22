@@ -73,7 +73,7 @@ main.two{
 main.three{
     height: 100vh;
     width: 100%;
-    background-position: 0px 0px;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.6);
@@ -222,7 +222,7 @@ table.desktop{
         background-position: 0px -150px;
     }
     main.three{
-        background-position: -103px 0px;
+        background-position: center;
     }
     .divider{
         font-size: 1.3rem;
@@ -260,7 +260,7 @@ table.desktop{
 }
 @media screen and (max-width: 770px){
     .chats{
-        height: 300px;
+        height: calc(80vh - 165px);
     }
     .ucapan{
         font-size: 2.5rem;
@@ -277,7 +277,7 @@ table.desktop{
         background-position: 0px -80px;
     }
     main.three{
-        background-position: -230px 0px;
+        background-position: center;
     }
     .divider{
         font-size: 1.3rem;
@@ -323,7 +323,7 @@ table.desktop{
         background-position: 0px 50px;
     }
     main.three{
-        background-position: -290px 0px;
+        background-position: center;
     }
     .divider{
         font-size: 1rem;
@@ -360,10 +360,10 @@ table.desktop{
 }
 @media screen and (max-width: 493px){
     .chats{
-        height: 400px;
+        /* height: 400px; */
     }
     main.one{
-        background-position: -50px 0px;
+        background-position: 0px 0px;
     }
     .divider{
         display: none;
@@ -412,7 +412,7 @@ table.desktop{
         background-position: 0px 0px;
     }
     main.three{
-        background-position: -360px 0px;
+        background-position: center;
     }
     .divider{
         display: none;
