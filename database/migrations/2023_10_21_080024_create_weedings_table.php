@@ -10,6 +10,7 @@ return new class extends Migration
     {
         Schema::create('weedings', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained();
             $table->string('code')->nullable();
             $table->string('groom')->nullable();
             $table->string('bride')->nullable();

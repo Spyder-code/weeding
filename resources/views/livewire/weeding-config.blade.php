@@ -11,7 +11,9 @@
         <div class="col-12 mb-2 col-md-6">
             <b>Buat link undangan</b>
             <hr>
+            @error('name') <span class="text-danger">{{ $message }}</span> @enderror
             <input type="text" name="name" wire:model="name" id="name" placeholder="Nama tamu undangan" class="form-control mb-2">
+            @error('phone') <span class="text-danger">{{ $message }}</span> @enderror
             <input type="text" name="phone" wire:model="phone" id="phone" placeholder="Nomor Whatsapp 08xxxxx" class="form-control mb-2">
             <button class="btn btn-primary mb-2" onclick="reload()" wire:click="addInvitation" type="button">Buat Link</button>
         </div>

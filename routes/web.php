@@ -22,8 +22,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/N-A/{name}', [PageController::class, 'presentGroom'])->name('present');
-Route::get('/A-N/{name}', [PageController::class, 'presentBride'])->name('present');
+Route::get('/N-A/{name?}', [PageController::class, 'presentGroom'])->name('present');
+Route::get('/A-N/{name?}', [PageController::class, 'presentBride'])->name('present');
 Route::prefix('admin')->group(function(){
     Route::resource('weeding',App\Http\Controllers\WeedingController::class);
     Route::resource('weedinginvitation',App\Http\Controllers\WeedingInvitationController::class);

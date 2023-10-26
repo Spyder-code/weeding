@@ -12,6 +12,11 @@ class WeedingConfig extends Component
 {
     public $weeding, $invitations, $data, $name, $phone;
 
+    protected $rules = [
+        'name' => 'required',
+        'phone' => 'required',
+    ];
+
     public function mount()
     {
         $this->weeding = Weeding::where('user_id',Auth::id())->first();
@@ -34,6 +39,7 @@ class WeedingConfig extends Component
 
     public function addInvitation()
     {
+        $this->validate();
         $name = strtolower($this->name);
         WeedingInvitation::create([
             'weeding_id' => $this->weeding->id,

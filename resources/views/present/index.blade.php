@@ -271,6 +271,7 @@
                         </div>
                     </div>
                     <div class="footer" style="position: absolute; bottom:75px; left:0; right:0; margin-left:auto; margin-right: auto">
+                        @if (!is_null($name))
                         <div class="d-flex justify-content-between">
                             <table class="mobiles time w-100 mt-1" style=" font-size: .9rem;">
                                 <tr>
@@ -281,6 +282,7 @@
                                 </tr>
                             </table>
                         </div>
+                        @endif
                         <table class="mobiles" style=" font-size: .9rem">
                             <tr style="border-top: #f4e2be 1px solid;">
                                 <td style="height: 10px"></td>
