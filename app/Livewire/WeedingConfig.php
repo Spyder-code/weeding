@@ -64,7 +64,7 @@ class WeedingConfig extends Component
     public function sendApi($id)
     {
         $us = WeedingInvitation::find($id);
-        $res = Http::post('http://localhost:3100/send',[
+        $res = Http::post('http://192.168.28.11:3100/send',[
             'number' => $us->wa(),
             'message' => "Yth. ".ucwords(strtolower($us->name))."\r\n\r\nTanpa mengurangi rasa hormat, perkenankan kami mengundang Saudara/i untuk menghadiri acara kami. Berikut link undangan kami:\r\n\r\nhttps://mediku.id/A-N/".$us->slug."\r\n\r\nMerupakan suatu kehormatan dan kebahagiaan bagi kami atas do'a restunya kami ucapkan terimakasih 😇"
         ]);
@@ -76,7 +76,7 @@ class WeedingConfig extends Component
     public function sendGreeting($id)
     {
         $us = WeedingInvitation::find($id);
-        $res = Http::post('http://localhost:3100/send',[
+        $res = Http::post('http://192.168.28.11:3100/send',[
             'number' => $us->wa(),
             'message' => "Yth. ".ucwords(strtolower($us->name))."\r\n\r\nTanpa mengurangi rasa hormat, perkenankan kami mengundang Saudara/i untuk menghadiri acara kami. Berikut link undangan kami:\r\n\r\nhttps://mediku.id/A-N/".$us->slug."\r\n\r\nMerupakan suatu kehormatan dan kebahagiaan bagi kami atas do'a restunya kami ucapkan terimakasih 🙏"
         ]);
