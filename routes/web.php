@@ -27,4 +27,5 @@ Route::get('/A-N/{name?}', [PageController::class, 'presentBride'])->name('prese
 Route::prefix('admin')->group(function(){
     Route::resource('weeding',App\Http\Controllers\WeedingController::class);
     Route::resource('weedinginvitation',App\Http\Controllers\WeedingInvitationController::class);
+    Route::post('weeding-invitation-import',[App\Http\Controllers\WeedingInvitationController::class,'import'])->name('weeding-invitation.import');
 });

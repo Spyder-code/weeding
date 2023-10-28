@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\WeedingInvitation;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Imports\InvitationImport;
 use DataTables;
+use Maatwebsite\Excel\Facades\Excel;
 
 class WeedingInvitationController extends Controller
 {
@@ -59,5 +61,11 @@ class WeedingInvitationController extends Controller
             })
             ->rawColumns(['aksi'])
             ->make(true);
+    }
+
+    public function import()
+    {
+        Excel::import(new InvitationImport(request('weeding_id')), request('file'));
+        return back()->with('success', 'All good!');
     }
 }
