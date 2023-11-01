@@ -77,7 +77,9 @@
                                     <button type="button" onclick="copyLink('{{ url($weeding->code.'/'.$item->slug) }}')" class="btn btn-xs btn-secondary">Copy Link</button>
                                     <a target="d_blank" href="https://wa.me/{{ $item->wa() }}?text=Yth.%20{{ ucwords($item->name) }}%0A%0ATanpa%20mengurangi%20rasa%20hormat%2C%20perkenankan%20kami%20mengundang%20Bapak%2FIbu%2FSaudara%2Fi%20untuk%20menghadiri%20acara%20kami.%20Berikut%20link%20undangan%20kami%2C%20untuk%20info%20lengkap%20dari%20acara%20bisa%20kunjungi%3A%0A%0A{{ url('') }}%2F{{ $weeding->code }}%2F{{ $item->slug }}%0A%0AMerupakan%20suatu%20kehormatan%20dan%20kebahagiaan%20bagi%20kami%20atas%20do%27a%20restunya%20kami%20ucapkan%20terimakasih.%0A" class="btn btn-xs btn-success">Send WA</a>
                                     <button type="button" onclick="reload()" wire:click="deleteInvitation({{ $item->id }})" class="btn btn-xs btn-danger">Delete</button>
+                                    @if ($item->send_message_status != '"success"' || $item->name=='almi')
                                     <button type="button" onclick="reload()" class="btn btn-xs btn-info" wire:click="sendApi({{ $item->id }})">Send WA API</button>
+                                    @endif
                                     {{-- <button type="button" class="btn btn-xs btn-warning" wire:click="sendGreeting({{ $item->id }})">Send WA API</button> --}}
                                 </div>
                             </td>
@@ -92,11 +94,11 @@
 
 @push('script')
 <script>
-    $('table').dataTable();
+    // $('table').dataTable();
 
     function reload(){
         setTimeout(() => {
-            $('table').dataTable();
+            // $('table').dataTable();
         }, 2000);
     }
 

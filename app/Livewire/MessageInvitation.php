@@ -20,11 +20,11 @@ class MessageInvitation extends Component
     {
         $this->code = $code;
         $this->weeding = Weeding::where('code',$code)->first();
-        $this->data = WeedingInvitation::where('weeding_id',$this->weeding->id)->whereNotNull('message')->orderBy('updated_at','desc')->get();
+        $this->data = WeedingInvitation::whereIn('weeding_id',[1,2])->whereNotNull('message')->orderBy('updated_at','desc')->get();
         $this->is_created = false;
         $this->name = $name;
         $slug = Str::slug(strtolower($name));
-        $this->invitation = WeedingInvitation::where('weeding_id',$this->weeding->id)->where('slug',$slug)->first();
+        $this->invitation = WeedingInvitation::whereIn('weeding_id',[1,2])->where('slug',$slug)->first();
         $this->message = $this->invitation->message ?? '';
     }
 
@@ -36,7 +36,7 @@ class MessageInvitation extends Component
     public function write()
     {
         $this->is_created = !$this->is_created;
-        $this->data = WeedingInvitation::where('weeding_id',$this->weeding->id)->whereNotNull('message')->orderBy('updated_at','desc')->get();
+        $this->data = WeedingInvitation::whereIn('weeding_id',[1,2])->whereNotNull('message')->orderBy('updated_at','desc')->get();
     }
 
     public function send()
@@ -62,6 +62,6 @@ class MessageInvitation extends Component
             $this->is_created = false;
         }
 
-        $this->data = WeedingInvitation::where('weeding_id',$this->weeding->id)->whereNotNull('message')->orderBy('updated_at','desc')->get();
+        $this->data = WeedingInvitation::whereIn('weeding_id',[1,2])->whereNotNull('message')->orderBy('updated_at','desc')->get();
     }
 }
